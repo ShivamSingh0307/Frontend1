@@ -1,0 +1,175 @@
+.register-page {
+  display: flex;
+  /* min-height: 100vh; */
+  background: white;
+  width: 80%;
+  height: 500px;
+  margin: 50px 80px;
+  
+}
+
+/* LEFT SIDE */
+.register-left {
+  flex: 1;
+  background: #2874f0;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 80%;
+  height: 500px;
+}
+
+.register-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.register-left p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.register-left img {
+  width: 80%;
+  margin-top: 30px;
+}
+
+/* RIGHT SIDE */
+.register-right {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h2 {
+  margin-bottom: 20px;
+  color: #2874f0;
+}
+
+/* FORM */
+.register-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register-right input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.register-right input:focus {
+  border-color: #2874f0;
+  outline: none;
+}
+
+/* BUTTON */
+.register-right button {
+  background: #fb641b;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.register-right button:hover {
+  background: #e85a17;
+}
+
+/* LOGIN TEXT */
+.login-text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.login-text a {
+  color: #2874f0;
+  text-decoration: none;
+}
+
+/* Container */
+.form-div {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-div h2{
+  text-align: center;
+}
+.form-div p{
+  text-align: center;
+}
+
+/* Input Fields */
+.form-div input {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus Effect */
+.form-div input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Button */
+.form-div button {
+  padding: 12px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Hover */
+.form-div button:hover {
+  background: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-div {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .register-page {
+    flex-direction: column;
+  }
+
+  .register-left {
+    text-align: center;
+  }
+
+  .register-left img {
+    width: 60%;
+    margin: auto;
+  }
+}

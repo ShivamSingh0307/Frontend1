@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background:rgb(94, 87, 87); */
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  background: #89b8af;
+  padding: 35px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #2a5298;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #1e3c72;
+}
+.register-account{
+  margin-top: 15px;
+}
+
+.bg-video {
+  position: fixed;          /* stays in background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* fills screen without distortion */
+  z-index: -1;              /* send behind content */
+}
+
+/* Optional: Dark overlay for better readability */
+.bg-video::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,74 @@
+/* Main background */
+.home {
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffe6f0, #fff5e6);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #e60073;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.hero button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff4d6d, #ff85a2);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #e6005c, #ff4d6d);
+}
+
+/* Features Section */
+.features {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card h2 {
+  color: #ff4d6d;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

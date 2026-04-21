@@ -1,0 +1,62 @@
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #1e293b;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Button container */
+.btn-outer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Common button */
+.btn-outer button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* View button */
+.view-btn {
+  background-color: #3498db;
+}
+
+.view-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
