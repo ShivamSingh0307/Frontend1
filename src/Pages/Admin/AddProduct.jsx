@@ -38,7 +38,7 @@ const AddProduct = () => {
         })
 
     const fetchProduct = () => {
-        axios.get(`${APi_Url}/api/get-all`)
+        axios.get(`${API_URL}/api/get-all`)
             .then((res) => {
                 setData(res.data.product)
             })
@@ -93,7 +93,7 @@ const AddProduct = () => {
 
             if (editMode) {
                 res = await axios.put(
-                    `${APi_Url}/api/update/${selectProduct._id}`,
+                    `${API_URL}/api/update/${selectProduct._id}`,
                     formData
                 );
 
@@ -105,7 +105,7 @@ const AddProduct = () => {
                 }
             } else {
                 res = await axios.post(
-                    `${APi_Url}/api/add`,
+                    `${API_URL}/api/add`,
                     formData
                 );
 

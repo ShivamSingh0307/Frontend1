@@ -23,7 +23,7 @@ const navigate = useNavigate()
    
     try{
       setLoading(true)
-      const res= await axios.post(`${APi_Url}/api/login`,{
+      const res= await axios.post(`${API_URL}/api/login`,{
       email,password
     })
     // console.log(res.data);

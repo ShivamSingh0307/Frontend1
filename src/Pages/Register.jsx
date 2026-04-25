@@ -15,7 +15,7 @@ const Register = () => {
 
   const handleSubmit =async(e)=>{
     e.preventDefault()
-    const res = await axios.post(`${APi_Url}/api/create-admin`,{
+    const res = await axios.post(`${API_URL}/api/create-admin`,{
         name,email,password
     })
     console.log(res.data);

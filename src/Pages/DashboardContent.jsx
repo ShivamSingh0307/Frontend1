@@ -16,7 +16,7 @@ const DashboardContent = () => {
   const fetchDashboardData = async () => {
     try {
       // Example API (change according to your backend)
-      const res = await axios.get( `${APi_Url}/api/dashboard`);
+      const res = await axios.get( `${API_URL}/api/dashboard`);
 
       setData(res.data);
     } catch (error) {

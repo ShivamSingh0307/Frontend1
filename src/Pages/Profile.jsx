@@ -17,7 +17,7 @@ const GetAllUsers = () => {
 
   const getUser = async () => {
     try {
-      const res = await axios.get(`${APi_Url}/api/user/get`);
+      const res = await axios.get(`${API_URL}/api/user/get`);
       // console.log(res.data)
 
       setUsers(res.data.users);
@@ -42,7 +42,7 @@ const GetAllUsers = () => {
   const handleDelete = async (id) => {
     try {
 
-      const res = await axios.delete(`${APi_Url}/api/user/delete/${id}`)
+      const res = await axios.delete(`${API_URL}/api/user/delete/${id}`)
       if (res.status === 200) {
         toast("Product deleted Successfully")
         // console.log(res);
